@@ -40,6 +40,7 @@ public class LivingThing {
     public void setAttack(int attack){
         this.attack = attack;
     }
+    
     public int getAttack() { return attack; }
 
 
