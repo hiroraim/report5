@@ -27,10 +27,8 @@ public class Enemy extends LivingThing {
             if (r <= 30 && damage >0) {
                 damage = damage * 2;
                 System.out.printf("%sの攻撃！痛恨の一撃！！%sに%dのダメージを与えた！！\n", getName(), bio.getName(), damage);
-
+                bio.wounded(damage);
             }else{
-
-
                 switch (damage) {
                     case 0:
                         System.out.printf("%sの攻撃！,,,だが、%sは攻撃を回避した！\n", getName(), bio.getName(), damage);
