@@ -37,6 +37,11 @@ public class LivingThing {
     public String getName() {
         return name;
     }
+    public void setAttack(int attack){
+        this.attack = attack;
+    }
+    public int getAttack() { return attack; }
+
 
 
 
